@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ramakrishna Mission Ashrama, Chandigarh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallerypage.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-om"><i class="fas fa-om"></i></div>
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="Screenshot 2025-12-16 194300.png" alt="RKM Logo" class="logo">
+                <h1><i class="fas fa-images"></i> Photo Gallery</h1>
+            </div>
+            <div class="nav-buttons">
+                <a href="main.html" class="nav-btn">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="main.html" class="nav-btn">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1><i class="fas fa-camera-retro"></i> Our Sacred Memories</h1>
+        <p>Glimpses of spiritual celebrations, sacred moments, and divine festivities at Ramakrishna Mission Ashrama</p>
+    </section>
+
+    <!-- Section Navigation -->
+    <nav class="section-nav">
+        <a href="#durga-puja" class="active"><i class="fas fa-om"></i> Durga Puja</a>
+        <a href="#kali-puja"><i class="fas fa-fire-alt"></i> Kali Puja</a>
+        <a href="#vivekananda-jayanti"><i class="fas fa-star"></i> Vivekananda Jayanti</a>
+        <a href="#ramakrishna-jayanti"><i class="fas fa-praying-hands"></i> Ramakrishna Jayanti</a>
+        <a href="#sarada-jayanti"><i class="fas fa-heart"></i> Sarada Devi Jayanti</a>
+    </nav>
+
+    <!-- Section 1: Durga Puja -->
+    <section id="durga-puja" class="gallery-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <div class="section-icon">
+                    <i class="fas fa-om"></i>
+                </div>
+                <div class="section-title-text">
+                    <h2>Durga Puja Celebrations</h2>
+                    <p>Annual worship of Goddess Durga - Victory of good over evil</p>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollGallery('durga-scroll', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="scroll-wrapper" id="durga-scroll">
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=1200', 'Durga Puja Pandal Decoration')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=600" alt="Durga Puja Pandal">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Pandal Decoration</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1601116957498-b7ca29caae90?w=1200', 'Maa Durga Idol')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1601116957498-b7ca29caae90?w=600" alt="Durga Idol">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Maa Durga Idol</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1570458436416-b8fcccfe883f?w=1200', 'Sacred Puja Rituals')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1570458436416-b8fcccfe883f?w=600" alt="Puja Rituals">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Sacred Rituals</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1633526544095-7c8a579b5627?w=1200', 'Evening Arati')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1633526544095-7c8a579b5627?w=600" alt="Arati Ceremony">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Evening Arati</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1574265935467-909c3d9f5801?w=1200', 'Devotees Gathering')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574265935467-909c3d9f5801?w=600" alt="Devotees">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Devotees Gathering</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1200', 'Cultural Program')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=600" alt="Cultural Program">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Cultural Program</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?w=1200', 'Floral Decorations')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?w=600" alt="Flower Decoration">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Floral Decorations</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1567591370504-80d5e5b667af?w=1200', 'Sindoor Khela')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567591370504-80d5e5b667af?w=600" alt="Sindoor Khela">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Sindoor Khela</h4>
+                        <p><i class="fas fa-calendar-alt"></i> October 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGallery('durga-scroll', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 2: Kali Puja -->
+    <section id="kali-puja" class="gallery-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <div class="section-icon">
+                    <i class="fas fa-fire-alt"></i>
+                </div>
+                <div class="section-title-text">
+                    <h2>Kali Puja Celebrations</h2>
+                    <p>Worship of Goddess Kali - The destroyer of evil forces</p>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollGallery('kali-scroll', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="scroll-wrapper" id="kali-scroll">
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1605456882764-f1cf4f48cf06?w=1200', 'Maa Kali Idol')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1605456882764-f1cf4f48cf06?w=600" alt="Kali Idol">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Maa Kali Idol</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1602524206684-fdf1baad0e1e?w=1200', 'Midnight Puja')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1602524206684-fdf1baad0e1e?w=600" alt="Night Puja">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Midnight Puja</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1604608672516-f1b9b1e6b8f0?w=1200', 'Diya Decorations')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604608672516-f1b9b1e6b8f0?w=600" alt="Diya Decoration">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Diya Decorations</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=1200', 'Temple Illumination')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=600" alt="Temple Lights">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Temple Illumination</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1582561833407-b95380302bc1?w=1200', 'Flower Offerings')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1582561833407-b95380302bc1?w=600" alt="Flower Offerings">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Flower Offerings</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1200', 'Night Celebrations')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=600" alt="Night Celebrations">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Night Celebrations</h4>
+                        <p><i class="fas fa-calendar-alt"></i> November 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGallery('kali-scroll', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 3: Swami Vivekananda Jayanti -->
+    <section id="vivekananda-jayanti" class="gallery-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <div class="section-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="section-title-text">
+                    <h2>Swami Vivekananda Jayanti</h2>
+                    <p>National Youth Day - January 12th Celebrations</p>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollGallery('vivekananda-scroll', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="scroll-wrapper" id="vivekananda-scroll">
+                <div class="gallery-card" onclick="openLightbox('https://live.staticflickr.com/65535/54445018230_5aa957da02_h.jpg', 'Swami Vivekananda Portrait')">
+                    <div class="card-image">
+                        <img src="https://live.staticflickr.com/65535/54445018230_5aa957da02_h.jpg" alt="Swamiji Portrait">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Swamiji's Portrait</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://live.staticflickr.com/65535/53677766551_6166cf2fa2_c_d.jpg', 'Youth Convention')">
+                    <div class="card-image">
+                        <img src="https://live.staticflickr.com/65535/53677766551_6166cf2fa2_c_d.jpg" alt="Youth Convention">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Youth Convention</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1200', 'Inspirational Speeches')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=600" alt="Speeches">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Inspirational Speeches</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200', 'Youth Rally')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600" alt="Rally">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Youth Rally</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1545126898-14d0e7e1d9cf?w=1200', 'Mass Meditation')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1545126898-14d0e7e1d9cf?w=600" alt="Meditation Session">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Mass Meditation</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200', 'Service Activities')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600" alt="Service Activities">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Service Activities</h4>
+                        <p><i class="fas fa-calendar-alt"></i> January 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGallery('vivekananda-scroll', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 4: Sri Ramakrishna Jayanti -->
+    <section id="ramakrishna-jayanti" class="gallery-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <div class="section-icon">
+                    <i class="fas fa-praying-hands"></i>
+                </div>
+                <div class="section-title-text">
+                    <h2>Sri Ramakrishna Jayanti</h2>
+                    <p>Birthday celebration of Sri Ramakrishna Paramahamsa</p>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollGallery('ramakrishna-scroll', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="scroll-wrapper" id="ramakrishna-scroll">
+                <div class="gallery-card" onclick="openLightbox('https://live.staticflickr.com/65535/53677987068_8c8477e862_c_d.jpg', 'Sri Ramakrishna Portrait')">
+                    <div class="card-image">
+                        <img src="https://live.staticflickr.com/65535/53677987068_8c8477e862_c_d.jpg" alt="Sri Ramakrishna">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Thakur's Portrait</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Belur_Math%2C_Howrah%2C_West_Bengal%2C_India.jpg/1200px-Belur_Math%2C_Howrah%2C_West_Bengal%2C_India.jpg', 'Belur Math Temple')">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Belur_Math%2C_Howrah%2C_West_Bengal%2C_India.jpg/1200px-Belur_Math%2C_Howrah%2C_West_Bengal%2C_India.jpg" alt="Belur Math">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Belur Math Temple</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=1200', 'Special Puja')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=600" alt="Special Puja">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Special Puja</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1200', 'Spiritual Discourse')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=600" alt="Discourse">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Spiritual Discourse</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1582561833407-b95380302bc1?w=1200', 'Temple Decoration')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1582561833407-b95380302bc1?w=600" alt="Flower Decoration">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Temple Decoration</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://babulhotel.com/wp-content/uploads/2023/10/BELUR-MATH.jpg', 'Belur Math Evening')">
+                    <div class="card-image">
+                        <img src="https://babulhotel.com/wp-content/uploads/2023/10/BELUR-MATH.jpg" alt="Evening View">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Belur Math Evening</h4>
+                        <p><i class="fas fa-calendar-alt"></i> February 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGallery('ramakrishna-scroll', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 5: Sri Sarada Devi Jayanti -->
+    <section id="sarada-jayanti" class="gallery-section">
+        <div class="section-header">
+            <div class="section-title-wrapper">
+                <div class="section-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="section-title-text">
+                    <h2>Sri Sarada Devi Jayanti</h2>
+                    <p>Birthday celebration of Holy Mother Sri Sarada Devi</p>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollGallery('sarada-scroll', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="scroll-wrapper" id="sarada-scroll">
+                <div class="gallery-card" onclick="openLightbox('https://live.staticflickr.com/65535/53678220115_f6379a1d2a_c_d.jpg', 'Holy Mother Sri Sarada Devi')">
+                    <div class="card-image">
+                        <img src="https://live.staticflickr.com/65535/53678220115_f6379a1d2a_c_d.jpg" alt="Holy Mother">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Holy Mother Portrait</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?w=1200', 'Flower Offerings')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?w=600" alt="Flower Offering">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Flower Offerings</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=1200', 'Women Devotees')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?w=600" alt="Women's Program">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Women's Program</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1604608672516-f1b9b1e6b8f0?w=1200', 'Lamp Lighting Ceremony')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604608672516-f1b9b1e6b8f0?w=600" alt="Lamp Lighting">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Lamp Lighting</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=1200', 'Bhajan Session')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?w=600" alt="Bhajan Session">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Bhajan Session</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200', 'Prasad Distribution')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600" alt="Food Distribution">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Prasad Distribution</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card" onclick="openLightbox('https://images.unsplash.com/photo-1545126898-14d0e7e1d9cf?w=1200', 'Evening Prayer')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1545126898-14d0e7e1d9cf?w=600" alt="Evening Prayer">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <button class="view-btn">
+                                    <i class="fas fa-expand"></i> View Full Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Evening Prayer</h4>
+                        <p><i class="fas fa-calendar-alt"></i> December 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollGallery('sarada-scroll', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Gallery Image" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-nav prev" onclick="navigateLightbox(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav next" onclick="navigateLightbox(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><i class="fas fa-om"></i> Ramakrishna Mission Ashrama, Chandigarh</p>
+        <p>Sector 15-A, Chandigarh - 160015</p>
+        <div class="footer-links">
+            <a href="main.html"><i class="fas fa-home"></i> Home</a>
+            <a href="main.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="main.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.85rem; opacity: 0.7;">
+            © 2025 Ramakrishna Mission Ashrama. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="gallerypage.js"></script>
+</body>
+</html>

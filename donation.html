@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Ramakrishna Mission Ashrama, Chandigarh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donation.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1 class="main-title">
+                <i class="fas fa-om"></i> Ramakrishna Mission Ashrama, Chandigarh
+            </h1>
+
+            <div class="logo-container">
+                <img
+                    src="C:\Users\jeetk\OneDrive\Desktop\rkmchandigarhwebsite\Screenshot 2025-12-16 194300.png"
+                    alt="Ramakrishna Mission Logo"
+                    class="logo"
+                >
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <span class="nav-brand"><i class="fas fa-om"></i> RKM Chandigarh</span>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="donation.html" class="active"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Donation Container -->
+    <div class="container">
+        <h1><i class="fas fa-hand-holding-heart"></i> Support Our Mission</h1>
+        <p class="subtitle">Your generous contribution helps us continue our spiritual, educational, and charitable activities serving humanity.</p>
+
+        <div class="quote">
+            <i class="fas fa-quote-left"></i>
+            "They alone live who live for others, the rest are more dead than alive."
+            <br><strong>— Swami Vivekananda</strong>
+            <i class="fas fa-quote-right"></i>
+        </div>
+
+        <div class="info-box">
+            <i class="fas fa-info-circle"></i>
+            <strong>Note:</strong> All donations to Ramakrishna Mission are eligible for tax exemption under Section 80G of the Income Tax Act.
+        </div>
+
+        <div class="donate-box">
+            <h2 style="text-align: center; color: #d35400; margin-bottom: 20px;">
+                <i class="fas fa-donate"></i> Make a Donation
+            </h2>
+
+            <label for="name"><i class="fas fa-user"></i> Your Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name" required />
+
+            <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+            <input type="email" id="email" placeholder="your.email@example.com" required />
+
+            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" />
+
+            <label><i class="fas fa-rupee-sign"></i> Select Amount</label>
+            <div class="amount-options">
+                <button class="amount-btn" onclick="selectAmount(500)">₹500</button>
+                <button class="amount-btn" onclick="selectAmount(1000)">₹1,000</button>
+                <button class="amount-btn" onclick="selectAmount(2000)">₹2,000</button>
+                <button class="amount-btn" onclick="selectAmount(5000)">₹5,000</button>
+                <button class="amount-btn" onclick="selectAmount(10000)">₹10,000</button>
+                <button class="amount-btn" onclick="selectAmount(0)">Custom</button>
+            </div>
+
+            <label for="amount"><i class="fas fa-rupee-sign"></i> Donation Amount (₹) *</label>
+            <input type="number" id="amount" placeholder="Enter amount (e.g., 1000)" required />
+
+            <label for="purpose"><i class="fas fa-hand-holding-heart"></i> Purpose (Optional)</label>
+            <textarea id="purpose" rows="3" placeholder="e.g., General fund, Education, Medical aid, etc."></textarea>
+
+            <label for="message"><i class="fas fa-comment"></i> Message (Optional)</label>
+            <textarea id="message" rows="3" placeholder="Your message or dedication"></textarea>
+
+            <button class="btn" onclick="submitDonation()">
+                <i class="fas fa-heart"></i> Proceed to Donate
+            </button>
+        </div>
+
+        <div class="payment-methods">
+            <h2><i class="fas fa-credit-card"></i> Payment Methods</h2>
+
+            <!-- UPI Payment -->
+            <div class="upi-box">
+                <h3><i class="fab fa-google-pay"></i> UPI Payment</h3>
+                <p>Scan QR code or use the UPI ID below:</p>
+                <div class="upi-id" id="upiId">ramakrishnamission@upi</div>
+                <button class="copy-btn" onclick="copyUPI()">
+                    <i class="fas fa-copy"></i> Copy UPI ID
+                </button>
+            </div>
+
+            <!-- QR Code -->
+            <div class="qr-box">
+                <h3><i class="fas fa-qrcode"></i> Scan QR Code to Donate</h3>
+                <p>Use any UPI app (Google Pay, PhonePe, Paytm, etc.)</p>
+                <img src="https://via.placeholder.com/250x250/e67e22/ffffff?text=QR+Code+Here" alt="QR Code for Donation" />
+                <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
+                    <i class="fas fa-info-circle"></i> Please replace with actual QR code
+                </p>
+            </div>
+
+            <!-- Bank Details -->
+            <div class="bank-box">
+                <h3><i class="fas fa-university"></i> Bank Transfer Details</h3>
+                <div class="bank-details">
+                    <p><strong>Account Name:</strong> Ramakrishna Mission Ashrama</p>
+                    <p><strong>Account Number:</strong> 1234567890123456</p>
+                    <p><strong>IFSC Code:</strong> SBIN0001234</p>
+                    <p><strong>Bank Name:</strong> State Bank of India</p>
+                    <p><strong>Branch:</strong> Sector 15, Chandigarh</p>
+                    <p><strong>Account Type:</strong> Savings</p>
+                </div>
+                <p style="color: #666; margin-top: 15px; font-size: 0.9rem;">
+                    <i class="fas fa-exclamation-circle"></i> Please send payment confirmation to: rkm.chandigarh@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div class="info-box" style="margin-top: 30px;">
+            <i class="fas fa-shield-alt"></i>
+            <strong>Your donation is secure:</strong> All transactions are encrypted and secure. You will receive a receipt for tax purposes via email.
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="donation.js"></script>
+</body>
+</html>
